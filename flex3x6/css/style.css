@@ -1,0 +1,137 @@
+*{
+	margin: 0px;
+	box-sizing: border-box;
+}
+/*Родительский блок разбиваем на 
+вертикальный и горизонтальный блоки 
+Учитывая рамку в 3px по периметру блока main,
+для разметки остается 1360х762px.
+Ширина вертикального 200px*3=600px 
+Высота горизонтального 762px/6=127px */
+.main{
+	width: 1366px;
+	height: 768px;
+	border: 3px solid black;
+	display: flex;
+	justify-content: flex-start;
+	font-family: 'Dancing Script', cursive;
+}
+.vertical__block{
+	width: 600px; /*200px*3*/
+	height: 100%; /*762px*/
+	display: flex;
+	justify-content: flex-start;
+}
+.horizontal__block{
+	width: 760px; /*1360px-600px*/
+	height: 100%; /*762px*/
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+/*Размер горизонтальных и вертикальных подблоков*/
+.horizontal__block > div {
+	width: 100%;
+	height: 127px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.vertical__block > div {
+	width: 200px;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*положение и размер контейнера для текста*/
+.v__text {
+	margin: 110px -45px;
+	width: 300px;
+	height: 150px;
+	transform: rotate(-90deg);
+}
+.h__text {
+	margin: 7px 400px;
+	width: 300px;
+	height: 100px;
+}
+/*несколько контейнеров для 
+текста смещаем для разнообразия*/
+.v3 > .v__text{
+	margin: 470px -45px;
+}
+.h3 > .h__text {
+	margin: 7px 40px;
+}
+.h5 > .h__text {
+	margin: 7px 200px;
+}
+/*стили текста вертикальных подблоков*/
+.v__text > .title{
+	color: red; 
+	font-size: 28px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.v__text >.subtitle{
+	color: darkblue; 
+	font-size: 22px;
+	font-weight: 500;
+	text-align: center;
+}
+.v__text >.text{
+	color: brown; 
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+}
+/*стили текста горизонтальных подблоков*/
+.h__text >.title{
+	color: white; 
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+}
+.h__text >.subtitle{
+	color: magenta; 
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+}
+.h__text >.text{
+	color: black; 
+	font-size: 14px;
+	font-weight: 300;
+	text-align: center;
+}
+
+/*Каждому подблоку даем свою фоновую картинку*/
+.v1{background: url(../img/mdwlp001.jpg);
+	background-position: bottom;
+}
+.v2{background: url(../img/mdwlp002.jpg);
+	background-position: left;
+}
+.v3{background: url(../img/mdwlp003.jpg);
+	background-position: bottom;
+}
+.h1{background: url(../img/mdwlp006.jpg);
+	background-position: bottom;
+}
+.h2{background: url(../img/mdwlp004.jpg);
+	background-position: left;
+}
+.h3{background: url(../img/mdwlp005.jpg);
+	background-position: bottom;
+}
+.h4{background: url(../img/mdwlp007.jpg);
+	background-position: bottom;
+}
+.h5{background: url(../img/mdwlp006.jpg);
+	background-position: left;
+}
+.h6{background: url(../img/mdwlp001.jpg);
+	background-position: top;
+}

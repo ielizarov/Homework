@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Horizontal_menu</title>
+    <style>
+    *{padding: 0; margin: 0;
+    }
+    .wrapper nav{
+        background-color: rgb(80, 80, 80);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        /*width: 100%;*/
+        /*position: fixed;*/
+    }
+    .menu__left ,.menu__right {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .menu__left li{
+        border-right: 1px solid grey;
+        padding: 5px;        
+    }
+    .menu__right li{
+        text-decoration: underline;
+        padding: 5px;
+    }
+    .wrapper li a:hover {
+        color: rgb(140, 250, 0);
+    } 
+    .wrapper li a{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 20px;
+        color: lightgrey;
+        text-transform: capitalize;
+        transition: 1s;
+    }            
+    </style>
+</head>
+<body style="font-family: 'Segoe UI';">
+
+    <div class="wrapper"> 
+        <nav>           
+            <ul class ="menu__left">
+                <li><a href="#" class="nav__1st">works</a></li>
+                <li><a href="#" class="nav__2nd">authors</a></li>
+                <li><a href="#" class="nav__3rd">studios</a></li>
+                <li><a href="#" class="nav__4th">schools</a></li>
+                <li><a href="#" class="nav__5th">contests</a></li>
+                <li><a href="#" class="nav__6th">blog</a></li>
+                <li><a href="https://ru.wikipedia.org/" class="nav__7th">wiki</a></li>
+            </ul>
+
+            <ul class ="menu__right">
+                <li><a href="#" class="nav__8th">log in</a></li>
+                <li><a href="#" class="nav__9th">register</a></li>
+                <li><a href="#" class="nav__10th">ru</a></li>
+                <li><a href="#" class="nav__11th">en</a></li>
+            </ul>
+        </nav>  
+    </div>
+
+</body>
+</html>

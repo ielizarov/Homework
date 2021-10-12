@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial';
+}
+.form__wrapper{
+	margin: 50px 0px 0px 50px;
+	width: 360px;
+	border: 40px solid rgba(0, 200, 200, 0.5);
+	background: rgba(0, 0, 0, 0.05);
+}
+.form__top{
+  height: 70px;
+  line-height: 70px;
+	padding: 0 0 0 30px;
+  font-size: 23px;
+  font-weight: 400;
+  color: black;
+	background: rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+ }
+.form__item{
+	height: 32px;
+	line-height: 32px;
+	margin: 25px 30px 0px 30px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;	
+}
+.iconblock{
+	width: 190px; /*contains input and icon*/
+	height: 32px;
+	line-height: 32px;
+	border: 2px solid rgba(0, 0, 0, 0.1);	
+	font-size: 14px; /*icon size*/
+	text-align: left;
+	background: white;
+}
+.iconblock input {
+	width: 155px; /*input sits inside iconblock*/
+	box-sizing: border-box;
+	height: 30px;	
+	border: none;
+	font-size: 16px;
+	padding-left: 10px;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);	
+}
+.iconblock input:focus{
+	outline: none;
+}
+.fas{
+	color: grey;
+	margin-left: 11px;
+}
+.recover{
+	margin: 10px 0 0 135px;
+	font-size: 11px;	
+}
+.recover a{
+	color: rgba(0, 150, 255, 0.9);	
+}
+.keep{
+	margin: 25px 0 25px 135px;
+	font-size: 16px;
+}
+.form__bottom{
+	height: 80px;
+  line-height: 80px;
+  text-align: right;
+	padding: 0 30px 0 0;
+	background: rgba(0, 0, 0, 0.08);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);     
+}
+input.button{
+	height: 35px;
+	padding: 0 18px;
+	margin-left: 15px;
+	text-align: center;
+	font-size: 16px;
+	background: rgba(0, 0, 0, 0.4);
+	color: white;
+	border: none;
+	transition: 0.5s;
+}
+input.button:hover{
+	cursor: pointer;
+	background: rgba(0, 150, 255, 0.8);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form1</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<form action="">
+		<div class="form__wrapper">
+
+			<div class="form__item">
+        		<div class="form__itemInfo">Твое имя</div>
+        		<input type="text" name="name" value="" title="Имя"/>
+			</div>
+
+     		<div class="form__item">
+     			<div class="form__itemInfo">Твой email</div>
+            	<input type="text" name="email" value="" title="Почта"/>
+			</div>
+
+			<div class="form__item">
+				<div class="form__itemInfo">Тема сообщения</div>
+				<select name="select__subject">
+                    <option value="subject01">Вопрос</option>
+                    <option value="subject02" selected="selected">Отзыв</option>
+                    <option value="subject03">Комментарий</option>
+                    <option value="subject04">Другое</option>
+        		</select>
+        	</div>
+
+        	<div class="form__item">
+				<div class="form__itemInfo">Текст *</div>
+        		<textarea cols="53" rows="9" name="textarea" ></textarea>
+			</div>
+
+			<div class="form__item">
+				<div class="form__itemInfo">Защита от спама *</div>
+            	<input class="captcha" type="text" name="CAPTCHA" value="" title="Капча"/>
+				<img src="img/img01.jpg" alt="">
+				<a href="#">сменить картинку</a>
+			</div>  			
+            	<input class="form__button" type="submit" name="submit" value="отправить" />    	
+
+		</div>
+
+</form>	
+</body>
+</html>

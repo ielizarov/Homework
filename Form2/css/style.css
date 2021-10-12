@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial';
+}
+.form__item{
+	padding: 10px 0px 25px 25px;
+}
+.form__wrapper{
+	margin: 50px 0px 0px 50px;
+	padding: 10px 0px;
+	width: 500px;
+	height: 420px;
+	border: 1px solid black;
+}
+.form__title{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  color: black;
+}
+.form__itemInfo{
+	font-size: 15px;
+}
+
+
+input:not(.button) {	
+	width: 435px;
+	height: 36px;
+	margin-bottom: 20px;
+	padding-left: 10px;	
+	border: 1px solid grey;
+	border-radius: 4px;
+	font-size: 13px;
+	outline: none;
+}
+input:focus {
+  border: 1px solid rgb(0, 70, 255);
+}
+input.button{
+	width: 180px;
+	height: 40px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	background: rgb(0, 70, 255);
+	color: white;
+	border-radius: 6px;
+}
